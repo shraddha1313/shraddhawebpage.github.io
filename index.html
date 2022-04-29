@@ -49,7 +49,7 @@
         });
         analytics.track('destination submitted', user, function() {
             window.location.href = "";
-        });
+        }, {'send email to':form["email"].value});
       }
 </script>
 
