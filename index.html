@@ -47,7 +47,7 @@
             email: email, 
             name: fullname
         });
-        analytics.track('destination submitted', user, {'send email to':email}, function() {
+        analytics.track('destination submitted', user, {'send email to':'email'}, function() {
             window.location.href = "";
         });
       }
