@@ -1,0 +1,46 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@segment/analytics-signals':
+    specifier: ^1.12.0
+    version: 1.12.0
+
+packages:
+
+  /@segment/analytics-generic-utils@1.2.0:
+    resolution: {integrity: sha512-DfnW6mW3YQOLlDQQdR89k4EqfHb0g/3XvBXkovH1FstUN93eL1kfW9CsDcVQyH3bAC5ZsFyjA/o/1Q2j0QeoWw==}
+    dependencies:
+      tslib: 2.8.1
+    dev: false
+
+  /@segment/analytics-signals-runtime@1.5.0:
+    resolution: {integrity: sha512-sixSy7EkvFd0mJkhllX4TSosAhLuqKXuTxHdFTIf0TdRScCQrtDKGBMVc6aKRIprmBVqaS9qPOm+z6zqXxzo5A==}
+    dependencies:
+      tslib: 2.8.1
+    dev: false
+
+  /@segment/analytics-signals@1.12.0:
+    resolution: {integrity: sha512-LOHQRwbPdTd8rgXCc6leUYbxvXth8nbC/+hG4veNDKcstZDKxoz6v1iorivGPR61NwBUghxi09iwR7sRcZNNrg==}
+    peerDependencies:
+      '@segment/analytics-next': '>=1.78.0'
+    peerDependenciesMeta:
+      '@segment/analytics-next':
+        optional: true
+    dependencies:
+      '@segment/analytics-generic-utils': 1.2.0
+      '@segment/analytics-signals-runtime': 1.5.0
+      idb: 8.0.2
+      tslib: 2.8.1
+    dev: false
+
+  /idb@8.0.2:
+    resolution: {integrity: sha512-CX70rYhx7GDDQzwwQMDwF6kDRQi5vVs6khHUumDrMecBylKkwvZ8HWvKV08AGb7VbpoGCWUQ4aHzNDgoUiOIUg==}
+    dev: false
+
+  /tslib@2.8.1:
+    resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
+    dev: false
